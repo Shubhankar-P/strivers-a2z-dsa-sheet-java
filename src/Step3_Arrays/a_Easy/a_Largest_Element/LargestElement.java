@@ -1,4 +1,4 @@
-package Step3_Arrays.a_Easy.Largest_Element;
+package Step3_Arrays.a_Easy.a_Largest_Element;
 
 import java.util.Arrays;
 
