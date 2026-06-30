@@ -1,4 +1,4 @@
-package Step1_Basics.Java_basics;
+package Step1_Basics.a_Java_basics;
 
 public class d_forEachLoop {
     public static void main(String[] args){

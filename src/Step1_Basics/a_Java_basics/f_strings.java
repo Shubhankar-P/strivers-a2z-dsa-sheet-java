@@ -1,6 +1,5 @@
-package Step1_Basics.Java_basics;
+package Step1_Basics.a_Java_basics;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class f_strings {

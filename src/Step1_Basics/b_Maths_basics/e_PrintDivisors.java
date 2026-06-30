@@ -1,4 +1,4 @@
-package Step1_Basics.Maths_basics;
+package Step1_Basics.b_Maths_basics;
 
 import java.util.Scanner;
 

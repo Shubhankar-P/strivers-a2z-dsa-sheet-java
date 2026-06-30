@@ -1,4 +1,4 @@
-package Step1_Basics.Maths_basics;
+package Step1_Basics.b_Maths_basics;
 
 import java.util.Scanner;
 
@@ -7,8 +7,9 @@ public class b_ReverseNumber {
         int revNum=0;
         int lastDigit;
 
-        while(num>0){
+        while(num!=0){
             lastDigit = num%10;
+            if((long) revNum*10 > Integer.MAX_VALUE || (long) revNum*10 < Integer.MIN_VALUE){return 0;}
             revNum = (revNum*10) + lastDigit;
             num/=10;
         }
