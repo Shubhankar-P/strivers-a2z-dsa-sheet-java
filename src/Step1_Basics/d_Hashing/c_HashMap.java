@@ -1,4 +1,4 @@
-package Step1_Basics.c_Hashing;
+package Step1_Basics.d_Hashing;
 
 import java.util.Arrays;
 import java.util.HashMap;
