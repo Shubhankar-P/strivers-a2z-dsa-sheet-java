@@ -8,9 +8,9 @@ import java.util.HashSet;
 
 public class RemoveDuplicates {
     public static void main(String[] args){
-        int[] arr = {2,2,2,2,2,5,5,6,6};
-        int[] result = RemoveDuplicates_brute(arr);
-        System.out.println(Arrays.toString(result));
+        int[] arr = {2,2,3,5, 5, 6,6,7};
+      //  int[] result = RemoveDuplicates_brute(arr);
+     //   System.out.println(Arrays.toString(result));
         System.out.println("Number of Unique elements: " + removeDuplicates_optimal(arr));
     }
 

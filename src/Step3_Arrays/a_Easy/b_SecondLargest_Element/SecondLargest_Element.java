@@ -27,7 +27,7 @@ public class SecondLargest_Element {
                 sLargest = largest;
                 largest = num;
             }
-            else if(num>sLargest && num<largest){
+            else if(num>sLargest && num!=largest){
                 sLargest = num;
             }
         }

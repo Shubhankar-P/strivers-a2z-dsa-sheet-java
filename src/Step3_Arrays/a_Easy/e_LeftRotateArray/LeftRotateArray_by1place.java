@@ -19,3 +19,7 @@ public class LeftRotateArray_by1place {
         return arr;
     }
 }
+
+
+// {1,2,3,4,5}
+// {4,5,1,2,3}

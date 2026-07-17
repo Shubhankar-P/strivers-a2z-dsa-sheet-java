@@ -11,20 +11,14 @@ public class CheckSortedArray {
     public static boolean CheckIfSorted_optimal(int[] arr){
         if(arr[0]<arr[arr.length-1]) {
             for (int i = 1; i < arr.length; i++) {
-                if (arr[i] < arr[i - 1]) {
-                    return false;
-                }
+                if (arr[i] < arr[i - 1]) { return false; }
             }
         }
         else{
             for (int i = 1; i < arr.length; i++) {
-                if (arr[i] > arr[i - 1]) {
-                    return false;
-                }
+                if (arr[i] > arr[i - 1]) { return false; }
             }
         }
         return true;
     }
-
-
 }
