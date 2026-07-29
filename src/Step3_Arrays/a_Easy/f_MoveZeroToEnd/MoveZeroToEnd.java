@@ -20,4 +20,15 @@ public class MoveZeroToEnd {
                 }
                 return nums;
     }
+
+    private static void moveZeroToEnd_reverse(int[] nums){
+        int i=nums.length;
+        for(int j=nums.length-1; j>=0; j--){
+            if(nums[j]!=0){
+                int temp = nums[--i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+            }
+        }
+    }
 }

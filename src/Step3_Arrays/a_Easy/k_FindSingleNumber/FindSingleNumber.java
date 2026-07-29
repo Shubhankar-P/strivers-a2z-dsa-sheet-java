@@ -1,5 +1,8 @@
 package Step3_Arrays.a_Easy.k_FindSingleNumber;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class FindSingleNumber {
 
     public static void main(String[] args){
@@ -30,6 +33,7 @@ public class FindSingleNumber {
     }
 
     //tried a hashing approach, but it fails for negative and large numbers (works only if nums are between 0-9)
+    // this was hashing using Arrays
     private static int findSingleNumber_myHashingApproach(int[] nums){
         int[] freq = new int[10];
 
@@ -51,6 +55,22 @@ public class FindSingleNumber {
         // ❌ Default return value (0) may give wrong answer
     }
 
+    // This is hashing using hashmaps, which is much better approach
+    private static int findSingleNumber_betterHashingApproach(int[] nums){
+        HashMap<Integer, Integer> freqMap = new HashMap<>();
+
+        for(int num: nums){
+            freqMap.put(num, freqMap.getOrDefault(num,0)+1);
+        }
+
+        for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
+            if (entry.getValue() == 1) {
+                return entry.getKey();
+            }
+        }
+
+        return -1;
+    }
 
 
 }
